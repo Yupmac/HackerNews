@@ -20,17 +20,16 @@ type NewsFeed = News & {
 }
 
 type NewsDetail = News & {
-  comments: [];
+  comments: NewsComment[];
 }
 
 type NewsComment = News & {
-  comments: [];
+  comments: NewsComment[];
   level: number;
 }
 
 const container: HTMLElement | null = document.getElementById('root');
 const ajax: XMLHttpRequest = new XMLHttpRequest();
-const content = document.createElement('div');
 const NEWS_URL = 'https://api.hnpwa.com/v0/news/1.json';
 const CONTENT_URL = 'https://api.hnpwa.com/v0/item/@id.json';
 const store: Store = {
