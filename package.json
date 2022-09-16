@@ -1,11 +1,5 @@
 {
-  "name": "HackerNews",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/Yupmac/HackerNews.git",
-  "author": "Yupmac <hohobanjang@gmail.com>",
-  "license": "MIT",
   "devDependencies": {
-    "parcel": "^2.7.0"
+    "typescript": "^4.8.3"
   }
 }
